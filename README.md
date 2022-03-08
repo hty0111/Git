@@ -11,10 +11,11 @@ git commit -m "<log>"	# 提交文件到版本库
 git remote add origin git@github.com:hty0111/<repo>.git	# 远程库的名字为origin
 git push -u origin master	# 将本地的master分支推送远程库origin并关联
 
-git clone	# 克隆到本地
+git clone <url> [repo]	# 克隆到本地
 git checkout -b <branch> origin/<branch>	# 创建远程分支到本地
 git branch --set-upstream-to <branch> origin/<branch>	# 建立本地分支和远程分支的链接
-git pull	# 抓取远程分支
+git pull origin <origin_branch>[:<local_branch>]	# 抓取远程分支与本地当前/指定分支合并
+git fetch origin <origin_branch>[:<local_branch>]	# 抓取远程分支但不合并
 
 git add -f <file>	# 强行添加gitignore忽略的文件
 git check-ignore -v <文件名>	# 查看被忽略原因
