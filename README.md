@@ -18,8 +18,8 @@ git pull origin <origin_branch>[:<local_branch>]	# 抓取远程分支与本地�
 git fetch origin <origin_branch>[:<local_branch>]	# 抓取远程分支但不合并
 
 git add -f <file>	# 强行添加gitignore忽略的文件
-git check-ignore -v <文件名>	# 查看被忽略原因
-git -rm -r --cached	# 清除添加gitignore之前已经被git跟踪的文件
+git check-ignore -v <file>	# 查看被忽略原因
+git rm -r --cached <file>	  # 清除添加gitignore之前已经被git跟踪的文件
 !.gitignore		# 避免被忽略
 
 git status		# 查看状态：可以看到是否有未提交的文件
