@@ -32,6 +32,7 @@ git reset --hard HEAD^		# 当前版本为HEAD，上上个版本为HEAD^^，上10
 git reset --hard <version>	# 根据版本号回退
 git reset HEAD <file>		# 丢弃暂存区的修改：把暂存区的版本会退到工作区
 git checkout -- [<file>]	# 让工作区（的文件）回到最近一次commit/add的状态
+git update-ref -d HEAD		# 撤销第一次commit
 
 git remote -v	# 查看远程库信息
 git remote rm origin	# 解除本地和远程的绑定关系
