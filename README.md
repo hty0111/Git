@@ -1,10 +1,10 @@
 ## 廖雪峰 Git教程
 
 ```shell
-git init	                                              # 初始化仓库
-git add <file>	                                          # 添加文件到暂存区
-git add .		                                          # 提交所有新文件
-git add -A		                                            # 提交所有变化
+git init                                                    # 初始化仓库
+git add <file>                                              # 添加文件到暂存区
+git add .                                                   # 提交所有新文件
+git add -A                                                  # 提交所有变化
 git add -u		                                            # 提交所有修改和删除的文件
 git rm <file>	                                            # 删除版本库的文件
 git commit -m "<log>"	                                    # 提交文件到版本库
