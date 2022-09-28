@@ -6,22 +6,22 @@ git add <file>                                              # 添加文件到暂
 git add .                                                   # 提交所有新文件
 git add -A                                                  # 提交所有变化
 git add -u		                                            # 提交所有修改和删除的文件
-git rm <file>	                                            # 删除版本库的文件
-git commit -m "<log>"	                                    # 提交文件到版本库
-git remote add origin git@github.com:hty0111/<repo>.git	    # 远程库的名字为origin
-git push -u origin master	                                # 将本地的master分支推送远程库origin并关联
+git rm <file>                                               # 删除版本库的文件
+git commit -m "<log>"                                       # 提交文件到版本库
+git remote add origin git@github.com:hty0111/<repo>.git     # 远程库的名字为origin
+git push -u origin master                                   # 将本地的master分支推送远程库origin并关联
 git push -f origin master                                   # 强制推送
 
-git clone <url> [repo]	                                    # 克隆到本地
-git checkout -b <branch> origin/<branch>	                # 创建远程分支到本地
-git branch --set-upstream-to <branch> origin/<branch>	    # 建立本地分支和远程分支的链接
-git pull origin <origin_branch>[:<local_branch>]	        # 抓取远程分支与本地当前/指定分支合并
-git fetch origin <origin_branch>[:<local_branch>]	        # 抓取远程分支但不合并
+git clone <url> [repo]                                      # 克隆到本地
+git checkout -b <branch> origin/<branch>                    # 创建远程分支到本地
+git branch --set-upstream-to <branch> origin/<branch>       # 建立本地分支和远程分支的链接
+git pull origin <origin_branch>[:<local_branch>]            # 抓取远程分支与本地当前/指定分支合并
+git fetch origin <origin_branch>[:<local_branch>]           # 抓取远程分支但不合并
 
 git add -f <file>                                           # 强行添加gitignore忽略的文件
-git check-ignore -v <file>	                                # 查看被忽略原因
-git rm -r --cached <file>	                                # 清除添加gitignore之前已经被git跟踪的文件
-!.gitignore		                                            # 避免被忽略
+git check-ignore -v <file>                                  # 查看被忽略原因
+git rm -r --cached <file>                                   # 清除添加gitignore之前已经被git跟踪的文件
+!.gitignore                                                 # 避免被忽略
 
 git status		                                            # 查看状态：可以看到是否有未提交的文件
 git diff <file>	                                            # 查看文件的修改情况
