@@ -28,14 +28,14 @@ git status                                                  # 查看状态：可
 git diff <file>                                             # 查看文件的修改情况
 git log --graph --pretty=oneline --abbrev-commit            # 查看提交日志
 git rebase <dev1> [<dev2>]                                  # 把dev2分支往dev1分支上整理成一条直线
-git rebase -i HEAD^											# 交互式整理历史
+git rebase -i HEAD^                                         # 交互式整理历史
 
 git reflog                                                  # 查看每一次命令：用于找寻版本号
-git checkout HEAD~^2~2										# 上移一次+上移到第二个父节点+上移两次
+git checkout HEAD~^2~2                                      # 上移一次+上移到第二个父节点+上移两次
 git reset --hard HEAD^                                      # 当前版本为HEAD，上上个版本为HEAD^^，上100个版本为HEAD~100
 git reset --hard <version>                                  # 根据版本号回退
 git reset HEAD <file>                                       # 丢弃暂存区的修改：把暂存区的版本会退到工作区
-git revert HEAD												# 撤销并更新（用于远程库）
+git revert HEAD                                             # 撤销并更新（用于远程库）
 git checkout -- [<file>]                                    # 让工作区（的文件）回到最近一次commit/add的状态
 git update-ref -d HEAD                                      # 撤销第一次commit
 
@@ -50,7 +50,7 @@ git branch -d <dev>                                         # 删除已合并分
 git branch -D <dev>                                         # 删除未合并分支
 git merge <dev>                                             # 将指定分支复制到当前分支
 git merge --no-ff -m "<log>" <dev>                          # 禁用fast forward则merge时会产生新的commit
-git branch -f <dev> <commit_id>								# 移动分支到指定位置
+git branch -f <dev> <commit_id>                             # 移动分支到指定位置
 
 git stash                                                   # 储藏当前工作现场
 git stash list                                              # 查看储藏区
@@ -68,7 +68,7 @@ git push origin <tag>                                       # 推送某个标签
 git push origin --tags                                      # 推送所有标签
 git tag -d <tag>                                            # 删除本地标签
 git push origin :refs/tags/<tagname>                        # 删除远程标签
-git describe <ref>      									# 查找离ref最近的tag
+git describe <ref>                                          # 查找离ref最近的tag
 
 git config --global color.ui true                           # 显示颜色
 git config --global alias.<alias> <cmd>                     # 取别名
