@@ -27,6 +27,7 @@ git reset HEAD <file>                                       # 丢弃暂存区的
 git revert <ref>                                            # 撤销某一次提交并更新（用于远程库）
 git checkout -- [<file>]                                    # 让工作区（的文件）回到最近一次commit/add的状态
 git update-ref -d HEAD                                      # 撤销第一次commit
+git commit --amend -m "<commit>"                            # 修改当前正在编辑的提交的commit
 
 # 分支管理
 git branch                                                  # 查看分支
