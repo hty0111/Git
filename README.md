@@ -53,6 +53,7 @@ git branch -u origin/<branch> <branch>                      # 建立本地分支
 git branch --set-upstream-to <branch> origin/<branch>       # 作用同上，但是分支顺序相反
 git pull origin <origin_branch>[:<local_branch>] [--rebase] # 抓取远程分支与本地当前/指定分支合并 == fetch + merge/rebase
 git fetch origin <origin_ref>[:<local_branch>]              # 抓取远程分支ref位置未被本地branch分支包含的记录（不合并）
+git merge origin/master -s ours --allow_unrelated_histories # 抓取远程分支后与本地分支合并
 git push origin <local_ref>:<origin_branch>                 # 上传所有ref位置未被远程仓库branch分支包含的提交记录
 
 # 日志和记录
