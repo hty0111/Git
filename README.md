@@ -42,6 +42,7 @@ git merge --no-ff -m "<log>" <dev>                          # 禁用fast forward
 git cherry-pick <ref>                                       # 复制一个特定的提交到当前分支
 git rebase <dev1> [<dev2>]                                  # 把（dev2分支）当前分支往dev1分支上整理成一条直线
 git rebase -i HEAD^                                         # 交互式整理历史，pick改成drop即删除提交，改成edit可以编辑commit信息。pick; drop; edit: git commit --amend -m <commit>; fixup
+git filter-branch -f --index-filter 'git rm --cached --ignore-unmatch <file>'   # 删除某个文件并重新生成commit（用于大文件）
 
 # 远程仓库
 git remote -v                                               # 查看远程库信息
