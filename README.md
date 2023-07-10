@@ -16,7 +16,7 @@ git add -u                                                  # 提交所有修改
 git rm <file>                                               # 删除版本库的文件
 git commit -m "<log>"                                       # 提交文件到版本库
 git remote add origin git@github.com:hty0111/<repo>.git     # 远程库的名字为origin
-git push -u origin master                                   # 将本地的master分支推送远程库origin并关联
+git push -u/--set-upstream origin/[master] master           # 将本地的master分支推送远程库origin并关联
 git push -f origin <local_branch>[:<origin_branch>]         # 强制推送本地src到远程dst
 
 # 版本管理
@@ -50,8 +50,7 @@ git remote rm origin                                        # 解除本地和远
 git clone <url> [repo]                                      # 克隆到本地
 git checkout -b <branch> origin/<branch>                    # 创建远程分支到本地
 git branch -vv                                              # 查看本地分支和远程库关联情况
-git branch -u origin/<branch> <branch>                      # 建立本地分支和远程分支的链接
-git branch --set-upstream-to <branch> origin/<branch>       # 作用同上，但是分支顺序相反
+git branch -u/--set-upstream-to <branch> origin/<branch>    # 建立本地分支和远程分支的链接，注意与 git push -u 分支顺序相反
 git pull origin <origin_branch>[:<local_branch>] [--rebase] # 抓取远程分支与本地当前/指定分支合并 == fetch + merge/rebase
 git fetch origin <origin_ref>:<local_branch>                # 抓取远程分支ref位置未被本地branch分支包含的记录（不合并），若origin_ref为空，视为在本地新建local_branch
 git merge origin/master -s ours --allow_unrelated_histories # 抓取远程分支后与本地分支合并
