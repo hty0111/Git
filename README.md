@@ -56,6 +56,12 @@ git fetch origin <origin_ref>:<local_branch>                # 抓取远程分支
 git merge origin/master -s ours --allow_unrelated_histories # 抓取远程分支后与本地分支合并
 git push origin <local_ref>:<origin_branch>                 # 上传所有ref位置未被远程仓库branch分支包含的提交记录，若local_ref为空，视为删除远程仓库的origin_branch
 
+# 子模块
+git submodule add <url>                                     # 添加子模块，更新.gitmodules
+git clone <url> --recurse-submodules                        # 递归拉取所有子项目 == git clone + git submodule update --init --update
+git submodule deinit <submodule> [--force]                  # 删除子模块信息，更新.git/config
+git rm <submodule>                                          # 删除子模块文件夹，更新.gitmodules
+
 # 日志和记录
 git reflog                                                  # 查看每一次命令：用于找寻版本号
 git status                                                  # 查看状态：可以看到是否有未提交的文件
