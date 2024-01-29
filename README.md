@@ -58,7 +58,7 @@ git push origin <local_ref>:<origin_branch>                 # 上传所有ref位
 
 # 子模块
 git submodule add <url>                                     # 添加子模块，更新.gitmodules
-git clone <url> --recurse-submodules                        # 递归拉取所有子项目 == git clone + git submodule update --init --update
+git clone <url> --recurse-submodules                        # 递归拉取所有子项目 == git clone + git submodule update --init --recursive
 git submodule deinit <submodule> [--force]                  # 删除子模块信息，更新.git/config
 git rm <submodule>                                          # 删除子模块文件夹，更新.gitmodules
 
