@@ -141,7 +141,7 @@ git config --global alias.lg "log --color --graph --pretty=format:'%C(auto)%h -%
 5. refactor：用于表示对代码进行了重构，既不是新增功能也不是修复bug，而是对代码结构进行了调整。
 6. test：用于表示添加或修改了测试代码。
 7. chore：用于表示对构建过程或辅助工具的修改，如更新依赖库、配置文件等。
-
+```
 
 ## 其他教程
 
