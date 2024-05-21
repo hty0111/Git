@@ -95,7 +95,7 @@ git check-ignore -v <file>                                  # 查看被忽略原
 git rm -r --cached <file>                                   # 清除添加gitignore之前已经被git跟踪的文件
 !.gitignore                                                 # 避免被忽略
 
-# 配置文件。C:\Users\HTY\.gitconfig; /home/hty/.gitconfig
+# 配置文件 C:\Users\HTY\.gitconfig or /home/hty/.gitconfig
 git config --global color.ui true                           # 显示颜色
 git config --global alias.<alias> <cmd>                     # 取别名
 git config --global --unset alias.<alias>                   # 删除别名
