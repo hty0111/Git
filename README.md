@@ -1,4 +1,4 @@
-![image](https://github.com/hty0111/Git/assets/87237878/0713bff8-1c89-44a3-bd1a-00435ba9e94e)# Git版本管理
+# Git版本管理
 
 
 
