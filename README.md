@@ -1,4 +1,4 @@
-# Git版本管理
+![image](https://github.com/hty0111/Git/assets/87237878/0713bff8-1c89-44a3-bd1a-00435ba9e94e)# Git版本管理
 
 
 
@@ -129,16 +129,21 @@ git config --global alias.lg "log --color --graph --pretty=format:'%C(auto)%h -%
 * 058ee4d v1.0
 ```
 
-#### 开发流程
+## 提交格式
 
 ```shell
-git switch -c dev	# 用dev分支进行开发
-git commit
-git switch master
-git merge --no-ff -m "commit info" dev	# 不用ff合并
-git tag <tag> master	# 打标签
-git push
-```
+<type>(<scope>): <subject>
+
+1. feat：用于表示新增了一个功能或特性。
+2. fix：用于表示修复了一个bug或问题。
+3. docs：用于表示更新了文档或注释。
+4. style：用于表示对代码风格进行了调整，如格式化代码、修改变量命名等。
+5. refactor：用于表示对代码进行了重构，既不是新增功能也不是修复bug，而是对代码结构进行了调整。
+6. test：用于表示添加或修改了测试代码。
+7. chore：用于表示对构建过程或辅助工具的修改，如更新依赖库、配置文件等。
+
+
+## 其他教程
 
 [merge策略](https://zhuanlan.zhihu.com/p/192972614)
 
