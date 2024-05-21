@@ -27,7 +27,7 @@ git reset HEAD <file>                                       # 丢弃暂存区的
 git revert <ref>                                            # 撤销某一次提交并更新（用于远程库）
 git checkout -- [<file>]                                    # 让工作区（的文件）回到最近一次commit/add的状态
 git update-ref -d HEAD                                      # 撤销第一次commit
-git commit --amend -m "<commit>"                            # 修改当前正在编辑的提交的commit
+git commit --amend -m "<commit>"                            # 修改当前提交的commit内容
 
 # 分支管理
 git branch                                                  # 查看分支
@@ -37,8 +37,9 @@ git switch -c <dev> / git checkout -b <dev>                 # 创建并切换分
 git branch -f <dev> <ref>                                   # 移动分支到指定位置
 git branch -d <dev>                                         # 删除已合并分支
 git branch -D <dev>                                         # 删除未合并分支
-git merge <dev>                                             # 将指定分支复制到当前分支，会创建新的提交
+git merge <dev>                                             # 将指定分支复制到当前分支，会创建新的commit
 git merge --no-ff -m "<log>" <dev>                          # 禁用fast forward则merge时会产生新的commit
+git merge --no-ff --no-commit                               # 不生成提交，可以手动选择需要add的改动文件后再commit
 git cherry-pick <ref>                                       # 复制一个特定的提交到当前分支
 git rebase <dev1> [<dev2>]                                  # 把（dev2分支）当前分支往dev1分支上整理成一条直线
 git rebase -i HEAD^                                         # 交互式整理历史，pick改成drop即删除提交，改成edit可以编辑commit信息。pick; drop; edit: git commit --amend -m <commit>; fixup
