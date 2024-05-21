@@ -110,23 +110,22 @@ git config --global alias.lg "log --color --graph --pretty=format:'%C(auto)%h -%
 `master`分支用来更新大版本，`dev`分支用于开发。
 
 ```shell
-*   5c6d6f7 (tag: v1.2, origin/master, master) add gun shift
+*   5c6d6f7 (tag: v1.2, origin/master, master) feat(shoot): add gun shift
 |\
-* \   75756af (tag: v1.1) add mahony
+* \   75756af (tag: v1.1) feat(imu): add mahony
 |\ \
-| | | * 91ceea9 (HEAD -> dev) revise minipc
-| | | * 968a5f0 fix minipc receive
-| | | * ff359d5 revise can receive
-| | | * 231b2d1 update mode task
+| | | * 91ceea9 (HEAD -> dev, origin/dev) feat(minipc): revise minipc
+| | | * 968a5f0 fix(minipc): fix minipc usart receive
+| | | * ff359d5 refactor(can): revise can receive
+| | | * 231b2d1 feat(mode): update mode task
 | | |/
-| | * 11926af add gun shift
+| | * 11926af feat(shoot): add gun shift
 | |/
-| * 0b00845 add mahony
-| * 6a174ec mahony
-| * f6afc90 add can auto-retransmission; remove redundant timer
-| * 46526d7 revise motor offset
+| * 0b00845 feat(imu): add mahony
+| * f6afc90 feat(can): add can auto-retransmission; remove redundant timer
+| * 46526d7 feat(motor): revise motor offset
 |/
-* 058ee4d v1.0
+* 058ee4d chore: first commit
 ```
 
 ## 提交格式
