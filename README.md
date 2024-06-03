@@ -96,11 +96,12 @@ git rm -r --cached <file>                                   # 清除添加gitign
 !.gitignore                                                 # 避免被忽略
 
 # 配置文件 C:\Users\HTY\.gitconfig or /home/hty/.gitconfig
-git config --global color.ui true                           # 显示颜色
 git config --global alias.<alias> <cmd>                     # 取别名
 git config --global --unset alias.<alias>                   # 删除别名
+git config --global color.ui true                           # 显示颜色
 git config --global alias.alias "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"
-git config --global alias.lg "log --color --graph --pretty=format:'%C(auto)%h -%C(auto)%d %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
+git config --global alias.lg "log --color --graph --pretty=format:'%C(auto)%h -%C(auto)%d %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+git config --global alias.lga "log --color --graph --pretty=format:'%C(auto)%h -%C(auto)%d %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --all"
 ```
 
 
