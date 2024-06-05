@@ -98,6 +98,9 @@ git rm -r --cached <file>                                   # 清除添加gitign
 # 配置文件 C:\Users\HTY\.gitconfig or /home/hty/.gitconfig
 git config --global alias.<alias> <cmd>                     # 取别名
 git config --global --unset alias.<alias>                   # 删除别名
+
+git config --global user.email "1044213317@qq.com"
+git config --global user.name "HTY"
 git config --global color.ui true                           # 显示颜色
 git config --global alias.alias "! git config --get-regexp ^alias\. | sed -e s/^alias\.// -e s/\ /\ =\ /"
 git config --global alias.lg "log --color --graph --pretty=format:'%C(auto)%h -%C(auto)%d %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
