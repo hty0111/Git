@@ -56,6 +56,7 @@ git pull origin <origin_branch>[:<local_branch>] [--rebase] # 抓取远程分支
 git fetch origin <origin_ref>:<local_branch>                # 抓取远程分支ref位置未被本地branch分支包含的记录（不合并），若origin_ref为空，视为在本地新建local_branch
 git merge origin/master -s ours --allow_unrelated_histories # 抓取远程分支后与本地分支合并
 git push origin <local_ref>:<origin_branch>                 # 上传所有ref位置未被远程仓库branch分支包含的提交记录，若local_ref为空，视为删除远程仓库的origin_branch
+git remote prune origin / git fetch origin --prune          # 删除不存在的远程分支
 
 # 子模块
 git submodule add <url>                                     # 添加子模块，更新.gitmodules
